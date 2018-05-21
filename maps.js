@@ -86,7 +86,7 @@ $(document).ready(function() {
         $.ajax({
             url: elevationURL,
             method: "GET",
-            headers: {"Access-Control-Allow-Origin": "localhost"}
+          //  headers: {"Access-Control-Allow-Origin": "localhost"}
             //"Origin": "github.io"
         }).then(function(response) {
             console.log(response);
