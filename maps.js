@@ -6,7 +6,7 @@ $(document).ready(function() {
     var radqueryURl=" ";
     var tlequeryURL="https://www.n2yo.com/rest/v1/satellite/tle/25544&apiKey=LME2C6-YYCFP8-NGPFAZ-3TA8" ;
    // var tlequeryURL="";
-   var elevationURL="http://maps.googleapis.com/maps/api/elevation/json?locations=30.2672,-97.7431&key=AIzaSyDoQLe8s7JUbTZ_ubXhGY4cUmLiNqWvQxw";
+   var elevationURL="https://maps.googleapis.com/maps/api/elevation/json?locations=30.2672,-97.7431&key=AIzaSyDoQLe8s7JUbTZ_ubXhGY4cUmLiNqWvQxw";
 //   var elevationURL=" ";
     var elevation=0;
     var entrylat=0;
