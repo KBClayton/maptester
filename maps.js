@@ -82,8 +82,7 @@ $(document).ready(function() {
     }   
     if(elevationURL!==" "){
     
-     //   var elevator = new google.maps.ElevationService;
-     //   elevator.LocationElevationRequest(30.2672, -97.7431);
+
         $.ajax({
             url: elevationURL,
             method: "GET",
