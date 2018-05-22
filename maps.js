@@ -4,8 +4,8 @@ $(document).ready(function() {
     var visqueryURL= " ";
 //    var radqueryURl="https://www.n2yo.com/rest/v1/satellite/radiopasses/25544/30.2672/-97.7431/0/2/40/&apiKey=LME2C6-YYCFP8-NGPFAZ-3TA8";
     var radqueryURl=" ";
-    var tlequeryURL="https://www.n2yo.com/rest/v1/satellite/tle/25544&apiKey=LME2C6-YYCFP8-NGPFAZ-3TA8" ;
-   // var tlequeryURL="";
+   // var tlequeryURL="https://www.n2yo.com/rest/v1/satellite/tle/25544&apiKey=LME2C6-YYCFP8-NGPFAZ-3TA8" ;
+     var tlequeryURL="";
    var elevationURL="https://maps.googleapis.com/maps/api/elevation/json?locations=30.2672,-97.7431&key=AIzaSyDoQLe8s7JUbTZ_ubXhGY4cUmLiNqWvQxw";
 //   var elevationURL=" ";
     var elevation=0;
@@ -86,7 +86,7 @@ $(document).ready(function() {
         $.ajax({
             url: elevationURL,
             method: "GET",
-          //  headers: {"Access-Control-Allow-Origin": "localhost"}
+           headers: {"Access-Control-Allow-Origin": "*"}
             //"Origin": "github.io"
         }).then(function(response) {
             console.log(response);
@@ -127,7 +127,7 @@ $(document).ready(function() {
             var positionGd = satellite.eciToGeodetic(positionEci, gmst);
 
             var longitude = positionGd.longitude;
-            var    latitude  = positionGd.latitude;
+            var  latitude  = positionGd.latitude;
 
             var longitudeStr = satellite.degreesLong(longitude);
             var latitudeStr  = satellite.degreesLat(latitude);
